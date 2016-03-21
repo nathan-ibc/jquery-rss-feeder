@@ -2,20 +2,255 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Test Page - RSS FEEDER</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" language="javascript"></script>
+<script src="rss-feeder.js" language="javascript"></script>
+<link href="fontello.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-<h5>From Our Blog</h5>
-<%
-  On Error Resume Next
-  dim blogObject
-  set blogObject = CreateObject("MSXML2.XMLHTTP")
-  Call blogObject.Open("GET", "http://feed.informer.com/widgets/1PE6GMRN1P.html", false)
-  Call blogObject.Send()
-  Response.Write(blogObject.responseText)
-  Response.Flush()
-  set blogObject = nothing
-%>
+<div class="rss-feeder">
+  <div class="feeder">
+    <h5>From Our Blog</h5>
+    <div class="news-wrap">
+      <div class="blog-news marquee">
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/SeXRuquYGmW');"> <img src="https://lh3.googleusercontent.com/-1d5F8qKrwgQ/U-PUcPhmjUI/AAAAAAAAAb0/IoTxSfAAirM/w506-h750/Almighty%2BTow%2BWebsite%2B8-14.jpg" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/SeXRuquYGmW" target="_blank">An excellent Johnson County towing, roadside assistance, AAA provider ww...</a></p>
+          <p class="blog-date"><i>August August, 2014</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/SeXRuquYGmW');"> <img src="https://lh3.googleusercontent.com/-1d5F8qKrwgQ/U-PUcPhmjUI/AAAAAAAAAb0/IoTxSfAAirM/w506-h750/Almighty%2BTow%2BWebsite%2B8-14.jpg" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/SeXRuquYGmW" target="_blank">An excellent Johnson County towing, roadside assistance, AAA provider ww...</a></p>
+          <p class="blog-date"><i>August August, 2014</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://internetbuildersconsulting.blogspot.com/2014/07/internet-builder-consulting-robert.html');"> <img src="http://internetbuildersconsulting.files.wordpress.com/2014/05/google-glass.jpg?w=300" width="300" height="225" alt="Internet Builder Consulting Google Glass Developers" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://internetbuildersconsulting.blogspot.com/2014/07/internet-builder-consulting-robert.html" target="_blank">Internet Builder Consulting &amp; Robert Dotcom Jackson Featured on NBC for ...</a></p>
+          <p class="blog-date"><i>July July, 2014</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/2itt9phQ4ex');"> <img src="https://lh3.googleusercontent.com/proxy/70KT0-Xyi5lhKgmBRFRYyWTqqcRssXQPGFw5uFiOSND84EzO-hVbzFREW701tAG-ICF5iJzaEKvJIVYgVD2j2gvcjLfTtYbi=w120-h120" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/2itt9phQ4ex" target="_blank">Looking for Love, a personal matchmaker and professional dating service ...</a></p>
+          <p class="blog-date"><i>June June, 2014</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2013/12/instagram-reaches-top-10-in-smartphone.html');"> <img src="http://3.bp.blogspot.com/-frPgLwalg_0/UqZRbjzLIBI/AAAAAAAAUFE/nVV_fDzBIr4/s640/top+10+smartphone+apps+3Q+2013.png" width="640" height="352" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2013/12/instagram-reaches-top-10-in-smartphone.html" target="_blank">Instagram Reaches Top 10 in Smartphone App Use</a></p>
+          <p class="blog-date"><i>December December, 2013</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2013/08/the-seo-benefits-of-social-networking.html');"> <img src="http://1.bp.blogspot.com/-J0xsINNmE1E/UhVKMbxeznI/AAAAAAAAPM4/Rg9xRFZXA4o/s1600/Google++likes+and+shares+8-13.jpg" width="640" height="440" class="feed_informer_first_image">
+
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2013/08/the-seo-benefits-of-social-networking.html" target="_blank">The SEO Benefits of Social Networking with Facebook and Google+</a></p>
+          <p class="blog-date"><i>August August, 2013</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2013/05/social-networking-studies-in-successful.html');"> <img src="http://1.bp.blogspot.com/-tJnClOzIwsc/UYgf8PUeeAI/AAAAAAAAMmw/dC8L090fUbo/s1600/Facebook+posts+with+questions+4-13.jpg" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2013/05/social-networking-studies-in-successful.html" target="_blank">Social Networking Studies in Successful Social Marketing Timing, Posts, ...</a></p>
+          <p class="blog-date"><i>May May, 2013</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2013/04/traditional-media-remains-strong-print.html');"> <img src="http://4.bp.blogspot.com/-ZnaVczXqVvU/UXX0ejkqE1I/AAAAAAAAL7c/f4zmYIQN9Is/s640/Nielsen-Global-Ad-Spend-Growth-by-Medium-in-2012-Apr20131.png" width="640" height="348" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2013/04/traditional-media-remains-strong-print.html" target="_blank">Traditional Media Remains Strong, Print Advertising Reduces and Internet...</a></p>
+          <p class="blog-date"><i>April April, 2013</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2013/02/facebook-graph-search-search-engine-now.html');"> <img src="http://1.bp.blogspot.com/-qv6WPdoHoOc/UQH1RuuoeiI/AAAAAAAAIms/tanXURPhhN0/s400/Facebook+Graph+Search+-+How+Privacy+Works.jpg" width="390" height="400" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2013/02/facebook-graph-search-search-engine-now.html" target="_blank">Facebook Graph Search 'Search Engine' now Competing with Google for Top ...</a></p>
+          <p class="blog-date"><i>February February, 2013</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2012/10/frequency-of-posts-unwanted-contact.html');">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2012/10/frequency-of-posts-unwanted-contact.html" target="_blank">Frequency of Posts, Unwanted Contact Discourage Likes On Company Pages o...</a></p>
+          <p class="blog-date"><i>October October, 2012</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2012/08/sales-lead-generation-success-with.html');"> <img src="http://1.bp.blogspot.com/-r5pkcdU830s/UEEK5HMKHzI/AAAAAAAADag/9l95lKi4T-k/s640/Social+Marketing+Results+8-12.png" width="640" height="416" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2012/08/sales-lead-generation-success-with.html" target="_blank">Sales &amp; Lead Generation Success with Social Marketing, Social Networking</a></p>
+          <p class="blog-date"><i>August August, 2012</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2012/08/social-networking-reputation-risks-and.html');"> <img src="http://1.bp.blogspot.com/-Kw1-_Z-jvQg/UC0yazVKbrI/AAAAAAAADCI/ZiJiqqFw1jU/s640/Facebook+Sale+Referral+8-12.jpg" width="576" height="640" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2012/08/social-networking-reputation-risks-and.html" target="_blank">Social Networking Reputation Risks and Online Reputation Management</a></p>
+          <p class="blog-date"><i>August August, 2012</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2012/07/pinterest-influences-37-of-men-to.html');"> <img src="http://3.bp.blogspot.com/-Wvk1stxkGls/T_sD_Qx3GaI/AAAAAAAACnM/ejst_atWYKM/s1600/Pinterest+Purchase+Influences+6-12.png" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2012/07/pinterest-influences-37-of-men-to.html" target="_blank">Pinterest Influences 37% of Men to Purchase &amp; 25% of All Users</a></p>
+          <p class="blog-date"><i>July July, 2012</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2012/06/social-marketing-is-about-interactions.html');"> <img src="http://4.bp.blogspot.com/-wAB9WOk5Q6I/T-ONU_dFWTI/AAAAAAAABh0/i8qAi05_S1Q/s320/Social+Networking+group.jpg" width="320" height="244" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2012/06/social-marketing-is-about-interactions.html" target="_blank">Social Marketing is about Interactions, Questions, Creating Buzz</a></p>
+          <p class="blog-date"><i>June June, 2012</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2012/04/pinterest-now-3-social-network-behind.html');"> <img src="http://4.bp.blogspot.com/-c-6EUNQmEdk/T39j1WV6COI/AAAAAAAABOo/eHkWr_8RUUc/s1600/Social+Networking+Traffic+4-12.png" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2012/04/pinterest-now-3-social-network-behind.html" target="_blank">Pinterest Now # 3 Social Network Behind Facebook &amp; Twitter</a></p>
+          <p class="blog-date"><i>April April, 2012</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2012/04/websites-online-marketing-seo-social.html');"> <img src="http://2.bp.blogspot.com/-YI-CqO1KI_E/T3H5PwVvEjI/AAAAAAAABLc/nZy2_aMQnRw/s640/BuildKeystone+by+Meredith+Oliver+7-10.jpg" width="640" height="283" alt="Keystone template website without META Tags or basic SEO" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2012/04/websites-online-marketing-seo-social.html" target="_blank">Websites, Online Marketing, SEO, Social Networks, Facebook, Twitter, Pin...</a></p>
+          <p class="blog-date"><i>April April, 2012</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2012/01/social-network-security-privacy-and.html');"> <img src="http://2.bp.blogspot.com/-4dDvnkBjtJY/TxCnkKr3BJI/AAAAAAAAA5c/NlZEOHZO5EI/s320/Social+Networking+Nails.jpg" width="223" height="320" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2012/01/social-network-security-privacy-and.html" target="_blank">Social Network Security, Privacy and Productivity</a></p>
+          <p class="blog-date"><i>January January, 2012</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2011/07/google-social-network-reaches-18.html');"> <img src="http://4.bp.blogspot.com/-MaAZG-fDOc8/TieRLAAkdBI/AAAAAAAAAZg/DVPH_Oo9GhA/s400/Google%252B+first+month+stats.jpg" width="400" height="320" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2011/07/google-social-network-reaches-18.html" target="_blank">Google+ Social Network Reaches 18 Million Users in the First Month</a></p>
+          <p class="blog-date"><i>July July, 2011</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2011/05/consumers-online-buyers-are-tapping.html');">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2011/05/consumers-online-buyers-are-tapping.html" target="_blank">Consumers &amp; Online Buyers Are Tapping Into the 'F-Factor' of Social Netw...</a></p>
+          <p class="blog-date"><i>May May, 2011</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2011/03/social-media-marketing-assists-with.html');"> <img src="https://lh5.googleusercontent.com/-HsN5oIE6NTI/TYp4zMs-9bI/AAAAAAAAAJQ/zQgHhzSx5mA/s400/Harris+Survey+on+Social+Networking+Complaints+3-2011.gif" width="400" height="300" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2011/03/social-media-marketing-assists-with.html" target="_blank">Social Media Marketing Assists with Customer Satisfaction &amp; Brand Perfor...</a></p>
+          <p class="blog-date"><i>March March, 2011</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2011/03/social-networking-dratamically.html');"> <img src="https://lh3.googleusercontent.com/-X0V32jk7xVs/TYEeNAw1eII/AAAAAAAAAJI/y6OcN7p9-xw/s1600/PEW+Social+Networking+by+age+2008-2010.JPG" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2011/03/social-networking-dratamically.html" target="_blank">Social Networking Dratamically Increases for Older Users - 3/4 of Workin...</a></p>
+          <p class="blog-date"><i>March March, 2011</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2011/03/use-of-social-networking-on-mobile.html');"> <img src="https://lh5.googleusercontent.com/-wNIgsQZGiGA/TW6qmsBcqsI/AAAAAAAAAI4/r8g6YZ_MQGI/s1600/Fastest+growing+mobile+usage+2-11.JPG" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2011/03/use-of-social-networking-on-mobile.html" target="_blank">Use of Social Networking on Mobile Devices Grows Significantly</a></p>
+          <p class="blog-date"><i>March March, 2011</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2011/02/women-lead-men-in-social-networking.html');"> <img src="http://4.bp.blogspot.com/-G0Hg83TBLuQ/TV7nXX5HJAI/AAAAAAAAAIw/_OfJcY8LXnI/s1600/Social+Networking+Women+and+Men+Increases+2010.JPG" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2011/02/women-lead-men-in-social-networking.html" target="_blank">Women Lead Men in Social Networking Usage, Facebook Still # 1</a></p>
+          <p class="blog-date"><i>February February, 2011</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2011/01/brand-managementfor-you.html');"> <img src="http://4.bp.blogspot.com/_AOS9xspd9MY/TULU1K1nL6I/AAAAAAAAAGk/zesMTomEa_E/s320/Brand%2BManagement.jpg" alt="" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2011/01/brand-managementfor-you.html" target="_blank">Brand Management…For YOU!</a></p>
+          <p class="blog-date"><i>January January, 2011</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2011/01/friends-with-benefits.html');"> <img src="http://3.bp.blogspot.com/_Moi7GyjjuE0/TTmrhF-KgAI/AAAAAAAAAIU/uoZNxM5im1s/s320/SocialArrow.JPG" width="320" height="213" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2011/01/friends-with-benefits.html" target="_blank">Friends with Benefits</a></p>
+          <p class="blog-date"><i>January January, 2011</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2010/12/americans-use-social-networking-more.html');"> <img src="http://2.bp.blogspot.com/_Moi7GyjjuE0/TRF3bu1wFpI/AAAAAAAAAHg/RLUthwbsfVc/s400/American+Social+Networking+Use+12-10.JPG" width="212" height="400" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2010/12/americans-use-social-networking-more.html" target="_blank">Americans Use Social Networking More than Other Countries</a></p>
+          <p class="blog-date"><i>December December, 2010</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2010/12/marketers-are-watching-social-networks.html');"> <img src="http://4.bp.blogspot.com/_Moi7GyjjuE0/TQwdV03YpRI/AAAAAAAAAHY/vmI5boHVmp0/s400/TRON+email+after+facebook.jpg" width="325" height="400" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2010/12/marketers-are-watching-social-networks.html" target="_blank">Marketers Are Watching Social Networks &amp; Reading Your Posts!</a></p>
+          <p class="blog-date"><i>December December, 2010</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2010/11/social-networking-is-most-increased.html');"> <img src="http://4.bp.blogspot.com/_Moi7GyjjuE0/TO1LU8wrFkI/AAAAAAAAAG4/UbE4gWwgxqk/s400/online+time+spent+changes+2010.jpg" width="400" height="346" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2010/11/social-networking-is-most-increased.html" target="_blank">Social Networking is the Most Increased Online Activity in 2010</a></p>
+          <p class="blog-date"><i>November November, 2010</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://buildersocialmedia.blogspot.com/2010/10/social-networking-makes-users-feel-more.html');"> <img src="http://1.bp.blogspot.com/_Moi7GyjjuE0/TMHe7Sp8iqI/AAAAAAAAAGc/snHUyHxHkZ4/s1600/Social+Network+Connections+10-10.JPG" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://buildersocialmedia.blogspot.com/2010/10/social-networking-makes-users-feel-more.html" target="_blank">Social Networking Makes Users Feel More Connected Even as They Have Less...</a></p>
+          <p class="blog-date"><i>October October, 2010</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/NuAyWJSkBZd');"> <img src="https://lh3.googleusercontent.com/proxy/tIvlD2tj4O3izKK99Yi1MRxON7PZLWN32kdS9KeXiGMQyCBidbJ2FEL-DD_Krp1NDgOWhPXGCOInxnBHNDBDDeR2ZtzsgSTGVQ=w506-h910" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/NuAyWJSkBZd" target="_blank">Need a lawyer in Kansas or Missouri who can take care of things quickly ...</a></p>
+          <p class="blog-date"><i>December December, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/j5dyzRLJ2BR');"> <img src="https://lh3.googleusercontent.com/proxy/M7R-FdqCqXL03MJdJN1DcJbkUIGAU4bFBw1_l_UyDVfXq4GQe86B90QVC2bGp79nlQ3C5rl_wp_RqGDDkzpPNDabpQ=w506-h910" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/j5dyzRLJ2BR" target="_blank">The TOP location in Kansas City for DJ's, dancing, fun and friends has a...</a></p>
+          <p class="blog-date"><i>December December, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/GfZUnRu48TT');"> <img src="https://lh3.googleusercontent.com/proxy/NXN426Vgnb-FfR7nrKJJHs7WDn7a6wVgYq293l1BzodOG7BRkUWUWoTjC8vfl2tyXdtJNkXvhE5DwuD4Fx2nR65aGq8jQJzJm_Y=w506-h910" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/GfZUnRu48TT" target="_blank">If you live in KC and are looking for a website design, programming or e...</a></p>
+          <p class="blog-date"><i>September September, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('http://internetbuildersconsulting.blogspot.com/2015/09/google-search-engine-changes-website.html');"> <img src="http://4.bp.blogspot.com/-TBoxBOnApcI/VfBRfCMeUNI/AAAAAAAAqK0/xTZgLXQZ_nQ/s320/National%2BCBC%2BTraining%2B10-14%2B%25283%2529.JPG" width="320" height="240" alt="Robert Dotcom Jackson instructing Online Marketing, SEO &amp; Social Networking classes" class="feed_informer_first_image">
+          <p class="blog-title"><a href="http://internetbuildersconsulting.blogspot.com/2015/09/google-search-engine-changes-website.html" target="_blank">Google Search Engine Changes Website Requirements for 2015 including Mob...</a></p>
+          <p class="blog-date"><i>September September, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/hsRYERzs94g');">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/hsRYERzs94g" target="_blank">Our very own Robert Dotcom Jackson, one of the top SEO &amp; Social Marketin...</a></p>
+          <p class="blog-date"><i>August August, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/gUFgtJWvTk1');">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/gUFgtJWvTk1" target="_blank">Successful Interior Designer Sarah Twenter is online with a new website ...</a></p>
+          <p class="blog-date"><i>August August, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/JaSkQSk8cTv');"> <img src="https://lh3.googleusercontent.com/proxy/PjgdZR_ldOfd5Oput_x_0OMc8wkJBbbvw1NwsRWlaCweMVh6txA9R3t7XcZlT3q_w4_f_5ZNPUe9e2UlEJnZuO2LtBRlOuxBDuKx=w506-h910" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/JaSkQSk8cTv" target="_blank">If you are looking for a reputable builder in the North Kansas City area...</a></p>
+          <p class="blog-date"><i>June June, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/dDPMFRiJGpV');">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/dDPMFRiJGpV" target="_blank">Need a good lawyer for an insurance, business, personal injury or other ...</a></p>
+          <p class="blog-date"><i>June June, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/CCrE9rGGwtN');"> <img src="https://lh3.googleusercontent.com/-2PMW2TGVyho/VUA0ZIbNW0I/AAAAAAAAAe4/6jBkXnINqho/w506-h750/Dont%2BMake%2Bit%2BWorse.jpg" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/CCrE9rGGwtN" target="_blank">Nobody is perfect but we each have the opportunity every day to Make it ...</a></p>
+          <p class="blog-date"><i>April April, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/cFjwkXuzhFt');"> <img src="https://1.bp.blogspot.com/-aj5Xw-igmYo/VTcP96ksnNI/AAAAAAAAl7Q/38OCaBfurZk/w506-h910/Google%2BRanks%2BOld%2BWebsites%2BLower.jpg" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/cFjwkXuzhFt" target="_blank">&nbsp;Google Now Ranks websites lower that are not built to the new Google Mo...</a></p>
+          <p class="blog-date"><i>April April, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/VChnzttkNqR');"> <img src="https://lh3.googleusercontent.com/proxy/5wU23r0VRnYM4aBnrY3yha57GsZGadIEjFKBA7VOIEGk_3MnSIeNbQKsDg3P1CI6tPdE5flDtm1wxiIj06iTn6ltxHn45g=w120-h120" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/VChnzttkNqR" target="_blank">The Rob Ellerman Team @ Reece &amp; Nichols Real Estate and Don Julian Build...</a></p>
+          <p class="blog-date"><i>April April, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/VChnzttkNqR');"> <img src="https://lh3.googleusercontent.com/proxy/5wU23r0VRnYM4aBnrY3yha57GsZGadIEjFKBA7VOIEGk_3MnSIeNbQKsDg3P1CI6tPdE5flDtm1wxiIj06iTn6ltxHn45g=w120-h120" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/VChnzttkNqR" target="_blank">The Rob Ellerman Team @ Reece &amp; Nichols Real Estate and Don Julian Build...</a></p>
+          <p class="blog-date"><i>April April, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/HLiyUdn66bs');">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/HLiyUdn66bs" target="_blank">Internet Builder Consulting has been teaching Online Marketing at the Na...</a></p>
+          <p class="blog-date"><i>January January, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/X7WtQfuqSpf');"> <img src="https://lh3.googleusercontent.com/-dXxgdnVx3zM/VKTjlYDNxcI/AAAAAAAAAd8/cb_3-qXBNPs/w506-h750/87zvX.jpg" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/X7WtQfuqSpf" target="_blank">Happy New Year and best wishes for you in life and business throughout 2...</a></p>
+          <p class="blog-date"><i>January January, 2015</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/D68RLDxvpjd');">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/D68RLDxvpjd" target="_blank">Kansas City Lawn Care, Yard Maintenance, Sprinkler Systems and Landscapi...</a></p>
+          <p class="blog-date"><i>December December, 2014</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/EXvLx5zQcJq');"> <img src="https://lh5.googleusercontent.com/-NKXIDskCOK8/VJYmeKASZtI/AAAAAAAAfeo/CS9rn-DGrOE/w506-h750/Robert%2B%2526%2BStewart%2B12-14.jpg" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/EXvLx5zQcJq" target="_blank">Take time to help others, make someone feel important, spend time not mo...</a></p>
+          <p class="blog-date"><i>December December, 2014</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/JtzfN9QtZpc');"> <img src="https://lh3.googleusercontent.com/proxy/5GkBHQ2C4-pzvTNuwRBKFHSvUrucOvtnB4yQnVQ7iP3eFbivnN_5LFB1AAza2lETKiveEI0OXyZfqtSrux69UNtYWG9VX2RA=w120-h120" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/JtzfN9QtZpc" target="_blank">The Rob Ellerman Team is the leading new homes sales group in Kansas Cit...</a></p>
+          <p class="blog-date"><i>December December, 2014</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/c1R197asdVX');">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/c1R197asdVX" target="_blank">We build BETTER Websites for everyone including the Mayor www.MayorJames...</a></p>
+          <p class="blog-date"><i>November November, 2014</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/PMFvdMjNRcg');">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/PMFvdMjNRcg" target="_blank">Kansas City's ONLY Green Gym powered by the sun has the best personal tr...</a></p>
+          <p class="blog-date"><i>October October, 2014</i></p>
+        </div>
+        <div class="blog-news-item marquee-item" onclick="window.open('https://plus.google.com/+Internetbuilderconsulting/posts/K3c8BCQV8sX');"> <img src="https://lh6.googleusercontent.com/-LlrKdG5jAuM/VADUpoXzJaI/AAAAAAAAAcw/EwB6ObHPiyQ/w506-h750/Miller%2BSchirger%2BLaw%2BFirm%2B8-14.jpg" class="feed_informer_first_image">
+          <p class="blog-title"><a href="https://plus.google.com/+Internetbuilderconsulting/posts/K3c8BCQV8sX" target="_blank">The Top National Law Firm www.MillerSchirger.com Website, SEO &amp; Social M...</a></p>
+          <p class="blog-date"><i>August August, 2014</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feeder">
+    <h5>Latest Tweets</h5>
+    <div class="news-wrap">
+      <div class="twitter-news marquee">
+        <div class="twitter-news-item marquee-item" onclick="window.open('https://twitter.com/BuilderWebsites/status/606501306098814976');"><span></span>
+          <div><a href="https://twitter.com/BuilderWebsites/status/606501306098814976" title="Snapchat Photos, Videos, Chat and Video Calls - Learn the Basics http:// goo.gl/fb/6AhT52 &nbsp;" target="_blank">Snapchat Photos, Videos, Chat and Video Calls - Learn the Basics http:// goo.gl/fb/6AhT52 &nbsp;</a></div>
+        </div>
+        <div class="twitter-news-item marquee-item" onclick="window.open('https://twitter.com/BuilderWebsites/status/590733061718994948');"><span></span>
+          <div><a href="https://twitter.com/BuilderWebsites/status/590733061718994948" title="Google Requires Mobile Friendly Websites to Rank Higher in Search Engine Search Results http:// goo.gl/fb/9UVMIq &nbsp;" target="_blank">Google Requires Mobile Friendly Websites to Rank Higher in Search Engine Search Results http:// goo.gl/fb/9UVMIq &nbsp;</a></div>
+        </div>
+        <div class="twitter-news-item marquee-item" onclick="window.open('https://twitter.com/BuilderWebsites/status/563862880542801921');"><span></span>
+          <div><a href="https://twitter.com/BuilderWebsites/status/563862880542801921" title="Email is Having a Midlife Crisis at the 44th Anniversary http:// goo.gl/fb/U3YHc1 &nbsp;" target="_blank">Email is Having a Midlife Crisis at the 44th Anniversary http:// goo.gl/fb/U3YHc1 &nbsp;</a></div>
+        </div>
+        <div class="twitter-news-item marquee-item" onclick="window.open('https://twitter.com/BuilderWebsites/status/537772453788143616');"><span></span>
+          <div><a href="https://twitter.com/BuilderWebsites/status/537772453788143616" title="A nice view of Daytona Beach from the hotel suite balcony - sunny and 80 is perfect for November! http:// pinterest.com/pin/2210986629 32235335/ &nbsp; …" target="_blank">A nice view of Daytona Beach from the hotel suite balcony - sunny and 80 is perfect for November! http:// pinterest.com/pin/2210986629 32235335/ &nbsp; …</a></div>
+        </div>
+        <div class="twitter-news-item marquee-item" onclick="window.open('https://twitter.com/BuilderWebsites/status/530781955973857280');"><span></span>
+          <div><a href="https://twitter.com/BuilderWebsites/status/530781955973857280" title="How to Connect Facebook to Twitter for Automatic 'Tweets' from Facebook Posts on Profiles… http:// goo.gl/fb/PZQp6l &nbsp;" target="_blank">How to Connect Facebook to Twitter for Automatic 'Tweets' from Facebook Posts on Profiles… http:// goo.gl/fb/PZQp6l &nbsp;</a></div>
+        </div>
+        <div class="twitter-news-item marquee-item" onclick="window.open('https://twitter.com/BuilderWebsites/status/497461684534263809');"><span></span>
+          <div><a href="https://twitter.com/BuilderWebsites/status/497461684534263809" title="Johnson County Kansas Law Firm http://www. ESLawyers.com &nbsp; website by http://www. InternetBuilderConsulting.com &nbsp; with o http:// pinterest.com/pin/..." target="_blank">Johnson County Kansas Law Firm http://www. ESLawyers.com &nbsp; website by http://www. InternetBuilderConsulting.com &nbsp; with o http:// pinterest.com/pin/...</a></div>
+        </div>
+        <div class="twitter-news-item marquee-item" onclick="window.open('https://twitter.com/BuilderWebsites/status/675011443247480832');"><span></span>
+          <div><a href="https://twitter.com/BuilderWebsites/status/675011443247480832" title="Dotcom on TV again for Nelson Atkins and Banana Republic # RobertDotcom # TV # Commercial # model https:// twitter.com/DotcomJackson/ status/674996..." target="_blank">Dotcom on TV again for Nelson Atkins and Banana Republic # RobertDotcom # TV # Commercial # model https:// twitter.com/DotcomJackson/ status/674996...</a></div>
+        </div>
+        <div class="twitter-news-item marquee-item" onclick="window.open('https://twitter.com/BuilderWebsites/status/651826745293864960');"><span></span>
+          <div><a href="https://twitter.com/BuilderWebsites/status/651826745293864960" title="Robert Dotcom Jackson doing a photo shoot for charity with Halls Kansas City # RobertDotcom # Charity http:// pinterest.com/pin/2210986629 33936236..." target="_blank">Robert Dotcom Jackson doing a photo shoot for charity with Halls Kansas City # RobertDotcom # Charity http:// pinterest.com/pin/2210986629 33936236...</a></div>
+        </div>
+        <div class="twitter-news-item marquee-item" onclick="window.open('https://twitter.com/BuilderWebsites/status/651826598270902276');"><span></span>
+          <div><a href="https://twitter.com/BuilderWebsites/status/651826598270902276" title="Robert Dotcom Jackson instructing a class on SEO and Social Marketing for the 2015 BetaBlox business http:// pinterest.com/pin/2210986629 33936228/..." target="_blank">Robert Dotcom Jackson instructing a class on SEO and Social Marketing for the 2015 BetaBlox business http:// pinterest.com/pin/2210986629 33936228/...</a></div>
+        </div>
+        <div class="twitter-news-item marquee-item" onclick="window.open('https://twitter.com/BuilderWebsites/status/641639143274061825');"><span></span>
+          <div><a href="https://twitter.com/BuilderWebsites/status/641639143274061825" title="Robert Dotcom Jackson instructing an Online Marketing, SEO and Social Networking class for the BetaB http:// pinterest.com/pin/2210986629 33775315/..." target="_blank">Robert Dotcom Jackson instructing an Online Marketing, SEO and Social Networking class for the BetaB http:// pinterest.com/pin/2210986629 33775315/...</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
