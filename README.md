@@ -4,10 +4,6 @@ Still in production.
 
   - Nathan 
   - More info coming later.
- 
-> Testing Testing
-
-More Testing
 
 ### Version
 1.0.0
