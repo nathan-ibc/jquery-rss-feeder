@@ -12,21 +12,21 @@ Still in production.
 
 jquery-rss-feeder uses a number of open source projects to work properly:
 
-* [jQuery.com] - duh
-* [feed.informer.com] - duh
+* [jQuery.com]
+* [feed.informer.com]
 
 ### Plugins
 
 jquery-rss-feeder is currently extended with the following plugins
 
-* None
+* N/A
 
 ### Development
 
 Want to contribute? Great!
 
 
-### Todos
+### To Dos
 
  - Write Tests
  - Rethink Github Save
