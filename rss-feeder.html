@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h5>From Our Blog</h5>
+<%
+  On Error Resume Next
+  dim blogObject
+  set blogObject = CreateObject("MSXML2.XMLHTTP")
+  Call blogObject.Open("GET", "http://feed.informer.com/widgets/1PE6GMRN1P.html", false)
+  Call blogObject.Send()
+  Response.Write(blogObject.responseText)
+  Response.Flush()
+  set blogObject = nothing
+%>
+</body>
+</html>
